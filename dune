@@ -1,0 +1,3 @@
+(executable
+ (name pgcli)
+ (libraries cohttp-lwt-unix))

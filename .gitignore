@@ -1,0 +1,32 @@
+*.annot
+*.cmo
+*.cma
+*.cmi
+*.a
+*.o
+*.cmx
+*.cmxs
+*.cmxa
+*.swp
+*.swo
+
+_build
+_opam
+_boot
+_perf
+_coverage
+
+
+# ocamlbuild targets
+*.byte
+*.native
+
+# oasis generated files
+setup.data
+setup.log
+
+# Dune generated files
+*.install
+
+.DS_Store
+

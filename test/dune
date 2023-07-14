@@ -1,0 +1,3 @@
+(test
+ (name pgcli)
+ (libraries cohttp-lwt-unix))

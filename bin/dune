@@ -1,0 +1,4 @@
+(executable
+ (public_name pgcli)
+ (name main)
+ (libraries pgcli cohttp-lwt-unix))
