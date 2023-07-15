@@ -2,7 +2,7 @@ open Lwt
 open Cohttp
 open Cohttp_lwt_unix
 
-let http_get_cmd url: string Lwt.t =
+let http_get_cmd url = 
   Client.get (Uri.of_string url) >>= fun (resp, body) ->
   let code = resp |> Response.status |> Code.code_of_status in
   Printf.printf "Response code: %d\n" code;
@@ -17,4 +17,5 @@ let () =
       let result = Lwt_main.run (http_get_cmd url) in
       Printf.printf "Result: %s\n" result
   | _ ->
-      Printf.printf "Usage: cli_tool (<url>)\n"
+      let error = "Usage: cli (<url>)" in
+      Printf.printf "Error: %s\n" error
